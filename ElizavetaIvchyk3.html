@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ForFriends</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Viaoda+Libre&display=swap" rel="stylesheet">
+	<style type="text/css">
+	   .container{
+	   	    display: flex;
+         	width: 80%;
+         	margin: 10px auto;
+         	flex-direction: column;
+         	text-align: center;
+         	font-family: 'Viaoda Libre', cursive;}
+
+       .tel{
+       	    font-family: 'Nunito', sans-serif;
+       	    background: url(https://static-cse.canva.com/blob/194901/Rainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.png);
+       	    align-items: center;
+         	justify-content: center;
+         	border: 2px solid; }
+       
+       .bthd{
+       	    font-family: 'Nunito', sans-serif;
+            background: url(https://static-cse.canva.com/blob/194901/Rainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.png);
+       	    align-items: center;
+         	justify-content: center;
+         	border: 2px solid;}
+        
+        .relation{
+        	font-family: 'Nunito', sans-serif;
+            background: url(https://static-cse.canva.com/blob/194901/Rainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.png);
+       	    align-items: center;
+         	justify-content: center;
+         	border: 2px solid;}
+         
+        .textarea{
+        	 font-family: 'Nunito', sans-serif;
+         	 border: 2px solid;
+         	 background: url(https://static-cse.canva.com/blob/194901/Rainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.png); }
+	   
+	    .test{
+             border: 10px solid;
+         	 background: url(https://krot.info/uploads/posts/2021-03/1614572005_8-p-anime-fon-nebo-art-kartinki-8.jpg); 
+         	 width: 100%;}
+
+        .MainInf{
+        	 font-family: 'Nunito', sans-serif;
+             background: url(https://static-cse.canva.com/blob/194901/Rainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.png) ;
+         	 background-color:#f0afaf;
+         	 border: 2px solid;
+	         color: black; }
+
+      
+        #header 
+           {height: 150px;
+           	width: 60%;
+         	background: url(https://krot.info/uploads/posts/2021-03/1614572005_8-p-anime-fon-nebo-art-kartinki-8.jpg) ;
+         	font-family: 'Viaoda Libre', cursive;
+	        color: black; 
+	        font-size: 30px;
+	        display: flex;
+	        margin: 10px auto;
+         	flex-direction: column;
+         	text-align: center;
+         	border: 10px solid;
+         	text-align: center;}
+         	
+         	
+	    #sex{
+	    	font-family: 'Nunito', sans-serif;
+	        background: url(https://static-cse.canva.com/blob/194901/Rainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.png) ;
+         	align-items: center;
+         	justify-content: center;
+         	border: 2px solid; }
+       
+        #testtitle{
+            font-family: 'Viaoda Libre', cursive;
+         	font-size: 50px;
+            align-items:  center;
+         	justify-content: center;
+         	background:#d0b5eb ;
+            display: flex;}
+    
+
+        #footer{ 
+        	font-family: 'Viaoda Libre', cursive;
+             width: 10%;}
+
+        .b1{
+        	
+        	align-items:  center;
+         	justify-content: center;
+         	 display: flex;}
+        
+	
+	</style>
+</head>
+<body>
+	
+	<header id="header">
+		<h1 >Анкета</h1>
+	</header>
+	
+	<main id="main" > 
+		<div class="container">
+		<form >
+		    <div class="MainInf" >
+		    <h2>Основна інформація </h2>
+			
+		      <input type =  "text" name = "name"  placeholder ="ІФБ" > 
+		      <input type="email" name="email" placeholder="e-mail">
+		   
+		   </div>
+		   
+		    <div id="sex">
+            <h3> Вибери стать </h3>
+		   
+		     Жінка <input type =  "radio" name = "sex" value =  "жінка" checked>
+		     Чоловік <input type =  "radio" name = "sex" value =  "чоловік" checked>
+		   
+           </div>
+		  
+		    <div class="tel">
+			<h3> Черкни свій номер</h3>
+
+			<input type="tel" name="number" placeholder="+380">
+		  
+		    </div>
+		  
+		    <div class="bthd">
+		    <h3>Коли тебе вітати?</h3>
+		     
+		     <input type="datetime-local" name="bithday" value="День народження">
+		    
+		    </div>
+		 
+		    <div class="relation">
+		    <h3>Ідемо на  каву?</h3>
+		    <form action="select1.php" method="post">
+           
+          
+           	<select size="4"  name="relation]">
+              <option disabled>Відносини</option>
+              <option value="В відносинах">В відносинах</option>
+              <option  value="В активному пошуку">В активному пошуку</option>
+              <option value="Все складно">Все складно</option>
+            </select>
+              <p><input type="reset" value="Скинути"></p> 
+           
+		    </div>
+		
+		    <div class="textarea">
+		    <form action="textarea1.php" method="post" >
+            <h3>Найяскравіший спогад зі мною)</h3>
+           
+             <textarea rows="10" cols="45" name="text" placeholder="Декілька слів.."></textarea>
+             <p><input type="reset" value="Скинути"></p>
+            
+            </form>
+            </div>
+		  
+		    <div class="test" >
+		    <h2 id="testtitle"> Наскільки добре ти мене знаєш?</h2>
+		
+		
+		    <h4>Скільки мені років?</h4>
+			 <p>20 <input type="radio" name="age" value="20" ></p>
+             <p>19 <input type="radio" name="age" value="19" ></p>
+             <p>21 <input type="radio" name="age" value="21" ></p>
+
+		
+		    <h4>Мій улюблений серіал?</h4>
+		     <p> <input type="radio" name="serial" value="correct" >Друзі</p>
+             <p><input type="radio" name="serial" value="uncorrect" >Теорія великого вибуху</p>
+             <p><input type="radio" name="serial" value="У всі тяжкі" >У всі тяжкі</p>
+		
+		    <h4>Моя улюблена тварина?</h4>
+			 <p>Кіт<input type="radio" name="animal" value="Кіт" ></p>
+             <p>Собака <input type="radio" name="animal" value="Собака" ></p>
+             <p>Попугай  <input type="radio" name="animal" value="Попугай" ></p>
+		
+		    <h4> Моя улюблена ігра?</h4>
+			 <p>The sims 4<input type="radio" name="game" value="The sims 4" ></p>
+             <p>Witcher 3<input type="radio" name="game" value="Witcher 3" ></p>
+             <p> GTA 5<input type="radio" name="game" value="GTA 5" ></p>
+		
+		    <h4>Чому надаю перевагу?</h4>
+			 <p>Море<input type="radio" name="relax" value="Море" ></p>
+             <p> Гори<input type="radio" name="relax " value="Гори" ></p>
+             <p>Ліс <input type="radio" name="relax" value="Ліс" ></p>
+		
+		
+            
+
+		
+             </div>
+        
+            <p><input type="submit"  value="Відправити" ></p> 
+       
+        </div>
+        </form>
+     </main>
+	
+	 <footer id="footer">
+		
+		<details>
+			
+			<summary>Well done! </summary>
+			<img src = "https://tlgrm.ru/_/stickers/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/1.jpg" alt = "ничоси" width = "160" height = "160">
+		
+		</details>
+	    
+	    <h3>Made by Liza</h3>
+	
+	 </footer>
+	
+</body>
+</html>
